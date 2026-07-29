@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>US Tax Bracket Calculator — Free Online | Tabutility</title>
+  <meta name="description" content="Calculate your 2024 US federal income tax by bracket. See exactly how much tax you owe at each rate.">
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://us-tax-bracket-calculator.tabutility.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://us-tax-bracket-calculator.tabutility.com/">
+  <meta property="og:title" content="US Tax Bracket Calculator — Free Online | Tabutility">
+  <meta property="og:description" content="Calculate your 2024 US federal income tax by bracket. See exactly how much tax you owe at each rate.">
+  <meta property="og:image" content="https://tabutility.com/og-blog.png">
+  <meta property="og:site_name" content="Tabutility">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://tabutility.com/og-blog.png">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <meta name="theme-color" content="#0f172a">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"US Tax Bracket Calculator","url":"https://us-tax-bracket-calculator.tabutility.com/","description":"Calculate your 2024 US federal income tax by bracket. See exactly how much tax you owe at each rate.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Tabutility","url":"https://tabutility.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tabutility","item":"https://tabutility.com"},{"@type":"ListItem","position":2,"name":"US Tax Bracket Calculator","item":"https://us-tax-bracket-calculator.tabutility.com/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do US tax brackets work?","acceptedAnswer":{"@type":"Answer","text":"The US uses a progressive tax system. Only the income that falls within each bracket is taxed at that rate — not your entire income."}},{"@type":"Question","name":"What is the standard deduction for 2024?","acceptedAnswer":{"@type":"Answer","text":"For 2024, the standard deduction is $14,600 for single filers and $29,200 for married filing jointly."}},{"@type":"Question","name":"What is FICA tax?","acceptedAnswer":{"@type":"Answer","text":"FICA includes Social Security (6.2%) and Medicare (1.45%), totalling 7.65% of gross pay up to applicable limits."}}]}</script>
+  <script>window.addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-78VZWJ5B1W');});</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
+</head>
+<body style="margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#0f172a;color:#f1f5f9;min-height:100vh">
+<nav style="background:#1e293b;padding:11px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #334155"><a href="https://tabutility.com" style="color:#fff;font-weight:800;font-size:16px;text-decoration:none">⚡ Tabutility</a><a href="https://tabutility.com/blog/" style="color:#a5b4fc;font-size:13px;font-weight:700;text-decoration:none">📖 Blog</a></nav>
+<div style="max-width:640px;margin:12px auto;padding:0 8px"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+<div id="app" style="max-width:640px;margin:8px auto;padding:0 8px 32px">
+  <h1 style="font-size:24px;font-weight:800;margin:0 0 4px">🇺🇸 US Tax Bracket Calculator 2024</h1>
+  <p style="color:#94a3b8;font-size:14px;margin:0 0 20px">Calculate your federal income tax by bracket. See exactly how much is taxed at each rate.</p>
+  <div style="background:#1e293b;border-radius:10px;padding:18px;border:1px solid #334155;margin-bottom:14px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div><label style="font-size:12px;color:#94a3b8;font-weight:600">Annual Income ($)</label><input id="income" type="number" placeholder="75000" oninput="calc()" style="width:100%;box-sizing:border-box;background:#0f172a;border:1px solid #334155;border-radius:6px;padding:10px 12px;color:#f1f5f9;font-size:15px;margin-top:6px;outline:none"></div>
+      <div><label style="font-size:12px;color:#94a3b8;font-weight:600">Filing Status</label><select id="status" onchange="calc()" style="width:100%;background:#0f172a;border:1px solid #334155;border-radius:6px;padding:10px 12px;color:#f1f5f9;font-size:14px;margin-top:6px;outline:none">
+        <option value="single">Single</option>
+        <option value="mfj">Married Filing Jointly</option>
+        <option value="mfs">Married Filing Separately</option>
+        <option value="hoh">Head of Household</option>
+      </select></div>
+    </div>
+  </div>
+  <div id="results" style="display:none">
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:14px">
+      <div style="background:#1e293b;border-radius:10px;padding:14px;border:1px solid #334155;text-align:center"><div style="font-size:11px;color:#94a3b8;margin-bottom:4px">TOTAL TAX</div><div id="r-total" style="font-size:20px;font-weight:800;color:#f87171"></div></div>
+      <div style="background:#1e293b;border-radius:10px;padding:14px;border:1px solid #334155;text-align:center"><div style="font-size:11px;color:#94a3b8;margin-bottom:4px">EFFECTIVE RATE</div><div id="r-eff" style="font-size:20px;font-weight:800;color:#fbbf24"></div></div>
+      <div style="background:#1e293b;border-radius:10px;padding:14px;border:1px solid #334155;text-align:center"><div style="font-size:11px;color:#94a3b8;margin-bottom:4px">TAKE-HOME</div><div id="r-home" style="font-size:20px;font-weight:800;color:#4ade80"></div></div>
+    </div>
+    <div style="background:#1e293b;border-radius:10px;padding:18px;border:1px solid #334155">
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin-bottom:12px">TAX BREAKDOWN BY BRACKET</div>
+      <div id="breakdown"></div>
+      <div style="margin-top:12px;font-size:11px;color:#475569">Standard deduction applied. State taxes not included. For 2024 tax year.</div>
+    </div>
+  </div>
+  <div id="prompt" style="color:#64748b;font-size:14px;text-align:center;padding:20px">Enter your income above to see your tax breakdown</div>
+</div>
+<script>
+const BRACKETS={
+  single:{deduction:14600,brackets:[[0,11600,0.10],[11600,47150,0.12],[47150,100525,0.22],[100525,191950,0.24],[191950,243725,0.32],[243725,609350,0.35],[609350,Infinity,0.37]]},
+  mfj:{deduction:29200,brackets:[[0,23200,0.10],[23200,94300,0.12],[94300,201050,0.22],[201050,383900,0.24],[383900,487450,0.32],[487450,731200,0.35],[731200,Infinity,0.37]]},
+  mfs:{deduction:14600,brackets:[[0,11600,0.10],[11600,47150,0.12],[47150,100525,0.22],[100525,191950,0.24],[191950,243725,0.32],[243725,365600,0.35],[365600,Infinity,0.37]]},
+  hoh:{deduction:21900,brackets:[[0,16550,0.10],[16550,63100,0.12],[63100,100500,0.22],[100500,191950,0.24],[191950,243700,0.32],[243700,609350,0.35],[609350,Infinity,0.37]]},
+};
+function fmt(n){return '$'+Math.round(n).toLocaleString();}
+function calc(){
+  const gross=parseFloat(document.getElementById('income').value)||0;
+  const status=document.getElementById('status').value;
+  const {deduction,brackets}=BRACKETS[status];
+  const taxable=Math.max(0,gross-deduction);
+  let tax=0;
+  const rows=[];
+  brackets.forEach(([lo,hi,rate])=>{
+    if(taxable<=lo) return;
+    const chunk=Math.min(taxable,hi)-lo;
+    const t=chunk*rate;
+    tax+=t;
+    rows.push({lo,hi,rate,chunk,t});
+  });
+  const marginal=brackets.find(([lo,hi])=>taxable>lo&&taxable<=hi);
+  document.getElementById('results').style.display=gross>0?'block':'none';
+  document.getElementById('prompt').style.display=gross>0?'none':'block';
+  if(!gross) return;
+  document.getElementById('r-total').textContent=fmt(tax);
+  document.getElementById('r-eff').textContent=(gross>0?(tax/gross*100).toFixed(1):0)+'%';
+  document.getElementById('r-home').textContent=fmt(gross-tax);
+  document.getElementById('breakdown').innerHTML=rows.map(r=>
+    '<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #1e293b;font-size:13px">'+
+    '<span style="color:#94a3b8">'+(r.rate*100).toFixed(0)+'% bracket <span style="color:#475569;font-size:11px">('+fmt(r.lo)+'–'+(r.hi===Infinity?'∞':fmt(r.hi))+')</span></span>'+
+    '<div style="text-align:right"><div style="color:#f1f5f9;font-weight:600">'+fmt(r.t)+'</div><div style="color:#475569;font-size:11px">on '+fmt(r.chunk)+'</div></div>'+
+    '</div>'
+  ).join('')+'<div style="display:flex;justify-content:space-between;padding:10px 0 0;font-size:14px;font-weight:700"><span style="color:#f1f5f9">Total Federal Tax</span><span style="color:#f87171">'+fmt(tax)+'</span></div>';
+}
+</script>
+<div style="max-width:640px;margin:12px auto;padding:0 8px"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+<div style="margin:0 auto 24px;max-width:640px;background:#1e293b;border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;cursor:pointer;border:1px solid #334155" onclick="window.open('https://www.amazon.com/s?k=personal+finance+tax+books&tag=tabutility-20','_blank','noopener noreferrer')" title="Want to understand your taxes better?">
+  <span style="font-size:28px;flex-shrink:0">📚</span>
+  <div style="min-width:0">
+    <div style="font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:3px">Want to understand your taxes better?</div>
+    <div style="font-size:12px;color:#94a3b8">Browse tax & finance books <span style="color:#f59e0b;white-space:nowrap">→ Browse on Amazon</span></div>
+    <div style="font-size:10px;color:#475569;margin-top:3px">As an Amazon Associate we earn from qualifying purchases.</div>
+  </div>
+</div>
+<h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px;max-width:640px;margin-left:auto;margin-right:auto">Related Tools</h2>
+<div style="max-width:640px;margin:0 auto 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px">
+      <a href="https://us-paycheck-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">US Paycheck Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">International</div></a>
+      <a href="https://us-capital-gains-tax.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">US Capital Gains Tax Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">International</div></a>
+      <a href="https://us-self-employment-tax.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">US Self-Employment Tax Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">International</div></a>
+      <a href="https://us-401k.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">401(k) Calculator 2026</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">International</div></a>
+    </div>
+</body>
+</html>
